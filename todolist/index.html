@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List with Status Navigation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 style="text-align: center;">Todo List with Status Navigation</h1>
+  <div class="todo-container">
+    
+    <div class="card" id="backlog">
+      <h3>Backlog</h3>
+      <ul class="todo-list" id="backlog-list">
+        <li class="todo-item">
+          <button class="button left" disabled>←</button>
+          <span>task 1</span>
+          <button class="button right">→</button>
+        </li>
+        <li class="todo-item">
+          <button class="button left" disabled>←</button>
+          <span>task 2</span>
+          <button class="button right">→</button>
+        </li>
+        <li class="todo-item">
+          <button class="button left" disabled>←</button>
+          <span>task 3</span>
+          <button class="button right">→</button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- To Do Card -->
+    <div class="card" id="todo">
+      <h3>To Do</h3>
+      <ul class="todo-list" id="todo-list">
+        <li class="todo-item">
+          <button class="button left">←</button>
+          <span>task 4</span>
+          <button class="button right">→</button>
+        </li>
+        <li class="todo-item">
+          <button class="button left">←</button>
+          <span>task 5</span>
+          <button class="button right">→</button>
+        </li>
+        <li class="todo-item">
+          <button class="button left">←</button>
+          <span>task 6</span>
+          <button class="button right">→</button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Ongoing Card -->
+    <div class="card" id="ongoing">
+      <h3>Ongoing</h3>
+      <ul class="todo-list" id="ongoing-list">
+        <li class="todo-item">
+          <button class="button left">←</button>
+          <span>task 7</span>
+          <button class="button right">→</button>
+        </li>
+        <li class="todo-item">
+          <button class="button left">←</button>
+          <span>task 8</span>
+          <button class="button right">→</button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Done Card -->
+    <div class="card" id="done">
+      <h3>Done</h3>
+      <ul class="todo-list" id="done-list">
+        <li class="todo-item">
+          <button class="button left">←</button>
+          <span>task 9</span>
+          <button class="button right" disabled>→</button>
+        </li>
+        <li class="todo-item">
+          <button class="button left">←</button>
+          <span>task 10</span>
+          <button class="button right" disabled>→</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
